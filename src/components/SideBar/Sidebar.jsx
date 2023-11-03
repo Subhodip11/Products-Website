@@ -11,7 +11,7 @@ const LinkTagStyles = {
   fontSize: "1.2rem",
 };
 
-function Sidebar({ products, searchResults, setSearchResults }) {
+function Sidebar({ products, setSearchResults }) {
   const [showNavbar, setShowNavbar] = useState(false);
   const [priceRange, setPriceRange] = useState(0);
   const [sortByPrice, setSortByPrice] = useState("");
@@ -127,7 +127,7 @@ function Sidebar({ products, searchResults, setSearchResults }) {
           </NavItems>
           <ApplyButtonWrapper>
             <ClearFilterButton
-              onClick={() => navigate("/home", { replace: true })}
+              onClick={() => navigate("/Products-Website", { replace: true })}
             >
               Clear Filter
             </ClearFilterButton>
@@ -137,7 +137,7 @@ function Sidebar({ products, searchResults, setSearchResults }) {
       )}
 
       <NavigationsWrapper>
-        <Link to="/" style={LinkTagStyles}>
+        <Link to="/Products-Website" style={LinkTagStyles}>
           Home
         </Link>
         <Link to="/search" style={LinkTagStyles}>
