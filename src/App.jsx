@@ -40,7 +40,7 @@ function App() {
         />
         <Routes>
           <Route
-            path="/home"
+            path="/Products-Website"
             element={
               <Home
                 productsData={productsData}
