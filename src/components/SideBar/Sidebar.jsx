@@ -126,7 +126,9 @@ function Sidebar({ products, searchResults, setSearchResults }) {
             </PriceRangeSlider>
           </NavItems>
           <ApplyButtonWrapper>
-            <ClearFilterButton onClick={() => navigate("/", { replace: true })}>
+            <ClearFilterButton
+              onClick={() => navigate("/home", { replace: true })}
+            >
               Clear Filter
             </ClearFilterButton>
             <ApplyButton onClick={handleSortAndFilter}>Apply</ApplyButton>
